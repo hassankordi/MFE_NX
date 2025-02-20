@@ -1,0 +1,27 @@
+<section class="container-fluid">
+    <p-toast />
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-lg-4 col-md-6 col-sm-10 col-11 card-bodyy">
+           <form [formGroup]="loginForm">
+            <h1 class="text-center mb-5">{{'welcome'}}</h1>
+            <div class="input-text">
+             <p-floatlabel variant="on">
+                 <input pInputText id="on_label" formControlName="username"  autocomplete="off" />
+                 <label for="on_label">{{'User Name'}}</label>
+             </p-floatlabel>
+         </div>
+         <div class="input-password">
+             <p-floatlabel variant="on">
+                 <p-password class="w-full" formControlName="password" id="on_label"
+                  styleClass="p-password p-component p-inputwrapper p-input-icon-right" [style]="{'width':'100%'}"
+                 [inputStyle]="{'width':'100%'}" [toggleMask]="true" />
+                 <label for="on_label">{{'Password'}}</label>
+             </p-floatlabel>
+         </div>
+         <div class="button-container">
+             <p-button (click)="login()" label="Submit" [disabled]="loginForm.invalid" />
+         </div>
+           </form>
+        </div>
+      </div>
+</section>

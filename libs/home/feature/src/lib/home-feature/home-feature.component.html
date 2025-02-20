@@ -1,0 +1,25 @@
+
+   <div *ngIf="isLoggedIn | async" class="fold-box">
+    <p-button  (click)="visible = true" icon="pi pi-bars p-0" severity="contrast" />
+   </div>
+<div class="d-flex justify-content-center">
+        <p-drawer [(visible)]="visible" [closable]="false">
+            <ng-template #header >
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" shape="circle" />
+                    <span class="font-bold">KORDI</span>
+                </div>
+            </ng-template>
+            <div class="flex-auto md:flex md:justify-start md:items-center flex-col">
+                <p-tree [selectionMode]="'single'" (onNodeSelect)="selectNode($event)"  [value]="filesInput" styleClass="w-full md:w-[30rem]" [filter]="true" filterPlaceholder="Search..!" />
+            </div>
+            <ng-template #footer>
+                <div class="d-flex justify-content-center gap-4">
+                    <button pButton label="Account" icon="pi pi-user" class="w-full" severity="contrast" outlined></button>
+                    <button pButton (click)="logout()" label="Logout" icon="pi pi-sign-out" class="w-full" severity="danger" text></button>
+                </div>
+            </ng-template>
+        </p-drawer>
+</div>
+    
+  

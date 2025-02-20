@@ -1,0 +1,12 @@
+{
+  "name": "@v-17-2/home-feature",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^19.1.0",
+    "@angular/core": "^19.1.0",
+    "@angular/router": "~19.1.0",
+    "primeng": "^19.0.6",
+    "@v-17-2/login-data-access": "0.0.1"
+  },
+  "sideEffects": false
+}
