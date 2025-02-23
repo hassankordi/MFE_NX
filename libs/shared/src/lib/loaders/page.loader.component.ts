@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
     standalone: true,
     styles:`
     .loader-container{
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
+    position: fixed;
     top:0;
     left:0;
     right:0;
     bottom:0;
-    position: absolute;
     background: linear-gradient(#4f9ca9, #f8c9b3);
     z-index: 10;
     display:flex;

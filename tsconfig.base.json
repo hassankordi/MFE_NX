@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@v-17-2/chart-prime": ["libs/shared-prime/chart-prime/src/index.ts"],
       "@v-17-2/home": ["libs/home/data-access/src/index.ts"],
       "@v-17-2/home-feature": ["libs/home/feature/src/index.ts"],
       "@v-17-2/home-ui": ["libs/home/ui/src/index.ts"],
@@ -22,6 +23,13 @@
       "@v-17-2/login-data-access": ["libs/login/data-access/src/index.ts"],
       "@v-17-2/login-ui": ["libs/login/ui/src/index.ts"],
       "@v-17-2/material-ui-lib": ["libs/shared/src/index.ts"],
+      "@v-17-2/org-chart-prime": [
+        "libs/shared-prime/org-chart-prime/src/index.ts"
+      ],
+      "@v-17-2/pie-chart-prime": [
+        "libs/shared-prime/pie-chart-prime/src/index.ts"
+      ],
+      "@v-17-2/table-prime": ["libs/shared-prime/table-prime/src/index.ts"],
       "materialSample/Module": [
         "apps/materialSample/src/app/remote-entry/entry.module.ts"
       ],

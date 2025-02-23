@@ -30,7 +30,15 @@ export class AppComponent {
       },1000)
 
     }
-    files: any[] = [{
+    files: any[] = [
+      {
+        key: '01',
+        label: 'Home',
+        data: {route:"/home"},
+        icon: 'pi pi-home',
+        children: []
+      },
+      {
       key: '0',
       label: 'UI Components',
       data: 'Documents Folder',

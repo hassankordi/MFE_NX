@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .home-container{
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(to left, #0c2a27, #13bbbb);
     padding: 50px;
     display: grid;
