@@ -16,6 +16,11 @@ export const appRoutes: Route[] = [
     canActivate:[AuthGuard]
   },
   {
+    path: 'mfe-content',
+    loadComponent: () => import('./mfe-content/mfe-content.component').then(x => x.MfeContentComponent),
+    canActivate:[AuthGuard]
+  },
+  {
     path: 'Angular_Material',
     loadChildren: () =>
       import('materialSample/Module').then((m) => m!.RemoteEntryModule),

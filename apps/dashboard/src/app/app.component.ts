@@ -66,7 +66,7 @@ export class AppComponent {
           {
               key: '0-0',
               label: 'What Is MFE',
-              data: {route:"Angular_Material"},
+              data: {route:"mfe-content"},
               icon: 'pi pi-question-circle',
           },
           {

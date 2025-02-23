@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'lib-home-ui',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './home-ui.component.html',
   styleUrls: ['./home-ui.component.scss'],
 })
