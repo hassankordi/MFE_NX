@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="container row m-auto justify-content-center">
-        <div class="content col-md-6 col-sm-8 col-12">
+        <div class="content col-lg-6 col-md-8 col-sm-10 col-12">
         <h3>Micro Frontends Overview!</h3>
            <p>
             In recent years, Micro Frontends Architecture has emerged as a popular trend in systems design, 
@@ -9,6 +9,94 @@
             manageable pieces.
            </p>
            <p>___ Mirroring the principles of microservices on the backend.</p>
+        <h3>
+            What Are Micro Frontends?
+        </h3>
+        <p>
+            Micro frontends is an architectural approach where a front-end application is divided into smaller, 
+            independent pieces that are developed, tested, and deployed separately. 
+            Each piece or "frontend" operates like a microservice and can be owned by different teams. 
+            These pieces are later integrated into the main application, offering a seamless user experience.
+        </p>
+        <h3>EX:</h3>
+        <!-- <img src="" class="img-fluid" alt="mfe-example"> -->
+        <!-- <div class="card flex justify-center p-0 m-0"> -->
+            <p-image src="assets/images/mfe-example.jpg" alt="mfe-example" width="100%" [preview]="true" />
+        <!-- </div> -->
+        <!-- //**WHY MFE MATTER**/// -->
+        <h3>
+            Why Micro Frontends Matter ?
+        </h3>
+        <p>
+            As applications grow, maintaining a single codebase becomes more challenging. 
+            The benefits of micro frontends include:
+        </p>
+        <ol>
+            <li>
+               <span> Scalability:</span> Large teams can work on different parts of the application concurrently without running into bottlenecks. 
+                This is especially important for organizations with distributed teams.
+            </li>
+            <li>
+               <span>
+                Faster Development and Deployment:
+               </span> Independent teams can release updates to their micro frontend without 
+                waiting for other parts of the application to be ready.
+            </li>
+            <li>
+                <span>
+                    Code Maintainability:
+                </span> Smaller codebases are easier to manage, test, and debug. 
+                Micro frontends allow for better separation of concerns and modularity.
+            </li>
+            <li>
+                <span>
+                    Technology Flexibility:
+                </span> Teams can select the best tools and frameworks for their specific needs, 
+                rather than being constrained by a single stack.
+            </li>
+            <li>
+                <span>
+                    Improved User Experience:
+                </span> Because micro frontends can be deployed independently, it is easier to implement A/B testing and canary releases, 
+                allowing for rapid user feedback and iteration.
+            </li>
+        </ol>
+
+        <!-- //**CHALLENGES OF MFE  **/// -->
+        <h3>
+            Challenges of Micro Frontends ?
+        </h3>
+        <p>
+            Although micro frontends solve many issues of scalability and maintainability, they introduce new challenges:
+        </p>
+        <ol>
+            <li>
+               <span> Performance Overhead:</span> Multiple micro frontends can lead to performance degradation due to increased network requests, 
+               larger bundle sizes, and potential duplication of code.
+            </li>
+            <li>
+               <span>
+                Consistency:
+               </span> Maintaining a consistent user experience across multiple independently developed micro frontends can be difficult. 
+               Global styles, design patterns, and UX standards need to be enforced.
+            </li>
+            <li>
+                <span>
+                    Cross-Team Collaboration:
+                </span> While the autonomy of micro frontends is a strength, it also means that collaboration between teams must be well-coordinated, 
+                especially when making changes that affect multiple parts of the application.
+            </li>
+            <li>
+                <span>
+                    Deployment Complexity:
+                </span> Managing independent deployments of each micro frontend can introduce deployment complexity, 
+                especially when dealing with shared resources.
+            </li>
+        </ol>
+        <p-image src="assets/images/pros&cons.png" alt="mfe-example" width="100%" [preview]="true" />
+
+        <h6>Created By Hassan Kurdi</h6>
+        
         </div>
     </div>
 </div>

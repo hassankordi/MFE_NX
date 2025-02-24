@@ -1,4 +1,4 @@
-<div class="h-100 w-100 card">
+<!-- <div class="h-100 w-100 card">
     <p-organization-chart [value]="data" [collapsible]="true">
         <ng-template let-node pTemplate="person">
             <div class="flex flex-col">
@@ -6,6 +6,19 @@
                     <img [src]="node.data.image" class="mb-4 w-6 h-6" />
                     <span class="font-bold mb-2">{{ node.data.name }}</span>
                     <span>{{ node.data.title }}</span>
+                </div>
+            </div>
+        </ng-template>
+    </p-organization-chart>
+</div> -->
+<div class=" h-100 w-100 card row justify-content-center overflow-x-auto">
+    <p-organization-chart [value]="data" selectionMode="multiple" [(selection)]="selectedNodes" [collapsible]="true">
+        <ng-template let-node pTemplate="person">
+            <div class="row flex flex-col">
+                <div class=" row flex flex-col items-center justify-content-center">
+                    <img [src]="node.data.image" style="width: 6rem;margin-bottom: 2rem;" class="mb-4 w-12 h-12" />
+                    <div class="font-bold mb-2">{{ node.data.name }}</div>
+                    <div>{{ node.data.title }}</div>
                 </div>
             </div>
         </ng-template>

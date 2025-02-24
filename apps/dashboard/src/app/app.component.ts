@@ -70,9 +70,15 @@ export class AppComponent {
               icon: 'pi pi-question-circle',
           },
           {
-              key: '0-1',
+            key: '0-1',
+            label: 'Module Federation',
+            data: {route:"mf-content"},
+            icon: 'pi pi-sitemap',
+        },
+          {
+              key: '0-2',
               label: 'Why NX',
-              data: {route:"PrimeNG-App"},
+              data: {route:"nx-monorepo"},
               icon: 'pi pi-key',
           }
       ]

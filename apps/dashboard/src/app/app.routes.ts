@@ -21,6 +21,16 @@ export const appRoutes: Route[] = [
     canActivate:[AuthGuard]
   },
   {
+    path: 'mf-content',
+    loadComponent: () => import('./module-federation-content/mf-content.component').then(x => x.ModuleFederationContentComponent),
+    canActivate:[AuthGuard]
+  },
+  {
+    path: 'nx-monorepo',
+    loadComponent: () => import('./nx-monorepo/nx-monorepo.component').then(x => x.NxMonorepoComponent),
+    canActivate:[AuthGuard]
+  },
+  {
     path: 'Angular_Material',
     loadChildren: () =>
       import('materialSample/Module').then((m) => m!.RemoteEntryModule),

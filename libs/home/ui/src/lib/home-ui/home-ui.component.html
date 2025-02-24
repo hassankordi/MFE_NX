@@ -17,16 +17,25 @@
                 <div class="folded-span">
                     Module Federation
                 </div>
-                <div (click)="$event.stopPropagation()" class="content">
-                    Module Federation is a Webpack feature that allows different apps (MFEs) to share code dynamically at runtime.
+                <div  class="content">
+                    <span (click)="$event.stopPropagation()">
+                        Module Federation is a Webpack feature that allows different apps (MFEs) to share code dynamically at runtime.
+
+                    </span>
+                    <a routerLink="/mf-content" class="read-more">Read more</a>
+                    
                    </div>
             </div>
             <div class="card">
                 <div class="folded-span">
                     Monorepo Integratoin (NX)
                 </div>
-                <div (click)="$event.stopPropagation()" class="content">
-                    A Monorepo is a single repository that contains multiple applications and libraries. Nx is a powerful tool for managing Monorepos in Angular, React, Node.js, and more.
+                <div class="content">
+                   <span (click)="$event.stopPropagation()">
+                    A Monorepo is a single repository that contains multiple applications and libraries. 
+                    Nx is a powerful tool for managing Monorepos in Angular, React, Node.js, and more.
+                   </span>
+                    <a routerLink="/nx-monorepo" class="read-more">Read more</a>
                 </div>
             </div>
         </div>

@@ -10,5 +10,6 @@ import { OrganizationChartModule } from 'primeng/organizationchart';
 })
 export class OrgChartPrimeComponent {
   @Input() data!: TreeNode[];
+  selectedNodes!: TreeNode[];
   constructor() {}
 }
