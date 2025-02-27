@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
     standalone: true,
     styles:`
     .loader-container{
-    // width: 100vw;
-    // height: 100vh;
     position: fixed;
     top:0;
     left:0;

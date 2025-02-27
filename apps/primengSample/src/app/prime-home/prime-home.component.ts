@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {OrgChartPrimeComponent} from '@v-17-2/org-chart-prime'
 import {PieChartPrimeComponent} from '@v-17-2/pie-chart-prime'
+import {ChartPrimeComponent} from '@v-17-2/chart-prime'
+import {PrimeFormsComponent} from '@v-17-2/prime-forms'
+import {TablePrimeComponent} from '@v-17-2/table-prime'
 import { TreeNode } from 'primeng/api';
 @Component({
   selector: 'ng-mf-prime-home',
-  imports: [CommonModule,OrgChartPrimeComponent,PieChartPrimeComponent],
+  imports: [CommonModule,ChartPrimeComponent,OrgChartPrimeComponent,PieChartPrimeComponent,TablePrimeComponent],
   templateUrl: './prime-home.component.html',
   styleUrl: './prime-home.component.css',
 })

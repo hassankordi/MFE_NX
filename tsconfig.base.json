@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -28,6 +28,9 @@
       ],
       "@v-17-2/pie-chart-prime": [
         "libs/shared-prime/pie-chart-prime/src/index.ts"
+      ],
+      "@v-17-2/prime-forms": [
+        "libs/shared-prime/prime-forms/prime-forms/src/index.ts"
       ],
       "@v-17-2/table-prime": ["libs/shared-prime/table-prime/src/index.ts"],
       "materialSample/Module": [

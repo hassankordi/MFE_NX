@@ -1,14 +1,34 @@
-<div class="container-fluid bg-danger">
-    <div class="container">
+<div class="container-fluid row justify-content-center">
+    <div class="col-lg-10 col-12">
 
-        <div class="grid-layout">
-           <div class="first-column">
-            <lib-org-chart-prime [data]="orgChartData"></lib-org-chart-prime>
-           </div>
-           <div class="second-column">
-            <lib-pie-chart-prime></lib-pie-chart-prime>
-           </div>
+        <div class="grid-layout-ltr">
+          <lib-org-chart-prime class="item-1" [data]="orgChartData"></lib-org-chart-prime>
+          <lib-pie-chart-prime class="item-2" ></lib-pie-chart-prime>
+          <lib-chart-prime class="item-3" ></lib-chart-prime>
         </div>
+        <div class="grid-layout-rtl">
+          <lib-table-prime class="item-1-r"></lib-table-prime>
+          <lib-table-prime class="item-2-r"></lib-table-prime>
+          <!-- <lib-table-prime class="item-3-r"></lib-table-prime> -->
+        </div>
+
+
+
+
+        <!-- <div class="grid-layout">
+         
+          <div class="second-column ">
+           <lib-pie-chart-prime ></lib-pie-chart-prime>
+          </div>
+          <div class="third-column">
+           <lib-chart-prime ></lib-chart-prime>
+          </div>
+
+          <div class="big-column">
+           
+           </div>
+       </div> -->
+       
 
     </div>
 </div>

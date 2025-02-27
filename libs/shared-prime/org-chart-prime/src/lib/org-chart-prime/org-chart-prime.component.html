@@ -11,7 +11,7 @@
         </ng-template>
     </p-organization-chart>
 </div> -->
-<div class=" h-100 w-100 card row justify-content-center overflow-x-auto">
+<div class=" h-100 w-100 card row justify-content-center">
     <p-organization-chart [value]="data" selectionMode="multiple" [(selection)]="selectedNodes" [collapsible]="true">
         <ng-template let-node pTemplate="person">
             <div class="row flex flex-col">
