@@ -5,10 +5,11 @@ import {PieChartPrimeComponent} from '@v-17-2/pie-chart-prime'
 import {ChartPrimeComponent} from '@v-17-2/chart-prime'
 import {PrimeFormsComponent} from '@v-17-2/prime-forms'
 import {TablePrimeComponent} from '@v-17-2/table-prime'
+import {RadarChartComponent} from '@v-17-2/radar-chart'
 import { TreeNode } from 'primeng/api';
 @Component({
   selector: 'ng-mf-prime-home',
-  imports: [CommonModule,ChartPrimeComponent,OrgChartPrimeComponent,PieChartPrimeComponent,TablePrimeComponent],
+  imports: [CommonModule,ChartPrimeComponent,OrgChartPrimeComponent,PieChartPrimeComponent,TablePrimeComponent,RadarChartComponent],
   templateUrl: './prime-home.component.html',
   styleUrl: './prime-home.component.css',
 })

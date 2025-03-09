@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="container">
         <h3 class="text-lowercase">When it comes to a very <span class="fw-bold fst-italic">large scale</span> application, you need to think about <span class="fw-bold">3</span> things</h3>
-        <div #grid class="grid">
+        <!-- <div #grid class="grid">
             <div class="card">
                <div class="folded-span">
                 Micro Frontends
@@ -28,7 +28,7 @@
             </div>
             <div class="card">
                 <div class="folded-span">
-                    Monorepo Integratoin (NX)
+                    Monorepo Integration (NX)
                 </div>
                 <div class="content">
                    <span (click)="$event.stopPropagation()">
@@ -38,7 +38,36 @@
                     <a routerLink="/nx-monorepo" class="read-more">Read more</a>
                 </div>
             </div>
+        </div> -->
+        <div class="container">
+        
+            <div class="section">
+                <h2>Micro Frontends</h2>
+                <p>Micro Frontends is an architectural style where frontend applications are broken down into smaller, independent modules.</p>
+                <div class="diagram">
+                    <p-image src="../../assets/homeDiagrams/mfe.jpg" alt="mf-example" width="20%" [preview]="true" />
+                </div>
+            </div>
+    
+            <div class="section">
+                <h2>Module Federation</h2>
+                <p>Module Federation allows different JavaScript applications to share code dynamically at runtime.</p>
+                <div class="diagram">
+                    <p-image src="../../assets/homeDiagrams/module-federation.jpg" alt="mf-example" width="20%" [preview]="true" />
+                    <!-- <img src="module-federation-diagram.png" alt="Module Federation Diagram" width="80%"> -->
+                </div>
+            </div>
+    
+            <div class="section">
+                <h2>Monorepo Integration (NX)</h2>
+                <p>NX helps manage Monorepos efficiently by providing tools for modularization, dependency tracking, and automation.</p>
+                <div class="diagram">
+                    <p-image src="../../assets/homeDiagrams/nx.jpg" alt="mf-example" width="20%" [preview]="true" />
+                </div>
+            </div>
+            
         </div>
+  
     </div>
 </div>
 

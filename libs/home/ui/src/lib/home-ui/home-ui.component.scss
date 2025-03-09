@@ -4,7 +4,7 @@
     background-color: hsl(0, 0%, 90%);
     font-family:  "Roboto Mono", serif;
     /* font-weight: 100; */
-    padding: 170px;
+    padding: 50px;
    
 }
 
@@ -60,4 +60,32 @@ h3{
             display: block;
         }
     }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+    text-align: center;
+}
+.diagram {
+    text-align: center;
+    margin: 20px 0;
 }

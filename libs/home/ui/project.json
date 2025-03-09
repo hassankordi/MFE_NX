@@ -10,7 +10,14 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/home/ui/ng-package.json"
+        "project": "libs/home/ui/ng-package.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "libs/home/ui/src/assets",
+            "output": "assets"
+          }
+        ]
       },
       "configurations": {
         "production": {

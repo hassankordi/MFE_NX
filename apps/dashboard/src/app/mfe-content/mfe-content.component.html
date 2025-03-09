@@ -2,22 +2,34 @@
     <div class="container row m-auto justify-content-center">
         <div class="content col-lg-6 col-md-8 col-sm-10 col-12">
         <h3>Micro Frontends Overview!</h3>
-           <p>
+           <!-- <p>
             In recent years, Micro Frontends Architecture has emerged as a popular trend in systems design, 
             especially for large-scale web applications. As the front-end landscape becomes increasingly complex, 
             monolithic architectures are showing their limitations. Micro frontends offer a solution by breaking down front-end applications into smaller, 
             manageable pieces.
+           </p> -->
+           <p>
+            Imagine a large shopping mall where each store operates independently but provides a seamless experience for 
+            visitors. Micro Frontends work similarly, breaking a large application into smaller, independently developed 
+            parts that come together smoothly.
            </p>
            <p>___ Mirroring the principles of microservices on the backend.</p>
         <h3>
-            What Are Micro Frontends?
+            <!-- What Are Micro Frontends? -->
+            Why Use Micro Frontends?
         </h3>
-        <p>
+        <!-- <p>
             Micro frontends is an architectural approach where a front-end application is divided into smaller, 
             independent pieces that are developed, tested, and deployed separately. 
             Each piece or "frontend" operates like a microservice and can be owned by different teams. 
             These pieces are later integrated into the main application, offering a seamless user experience.
-        </p>
+        </p> -->
+        <ul class="menu-check-list">
+            <li>Makes development faster and easier.</li>
+            <li>Each part can be built and updated separately.</li>
+            <li>Teams can work independently without affecting the entire application.</li>
+            <li>Improves performance and scalability.</li>
+        </ul>
         <h3>EX:</h3>
         <!-- <img src="" class="img-fluid" alt="mfe-example"> -->
         <!-- <div class="card flex justify-center p-0 m-0"> -->
@@ -32,6 +44,24 @@
             The benefits of micro frontends include:
         </p>
         <ol>
+            <li>
+                <span>Scalability:</span> Large teams can work in parallel without bottlenecks, ideal for distributed teams.
+            </li>
+            <li>
+                <span>Faster Development & Deployment:</span> Teams can release updates independently without dependencies on other parts.
+            </li>
+            <li>
+                <span>Code Maintainability:</span> Smaller codebases improve management, testing, and debugging with better modularity.
+            </li>
+            <li>
+                <span>Technology Flexibility:</span> Teams can choose the best tools and frameworks for their needs.
+            </li>
+            <li>
+                <span>Independent Deployment:</span> Each micro frontend can be deployed separately, reducing risks and allowing faster rollbacks or updates without affecting the entire application.
+            </li>
+        </ol>
+        
+        <!-- <ol>
             <li>
                <span> Scalability:</span> Large teams can work on different parts of the application concurrently without running into bottlenecks. 
                 This is especially important for organizations with distributed teams.
@@ -54,13 +84,14 @@
                 </span> Teams can select the best tools and frameworks for their specific needs, 
                 rather than being constrained by a single stack.
             </li>
-            <li>
+           
+        </ol> -->
+         <!-- <li>
                 <span>
                     Improved User Experience:
                 </span> Because micro frontends can be deployed independently, it is easier to implement A/B testing and canary releases, 
                 allowing for rapid user feedback and iteration.
-            </li>
-        </ol>
+            </li> -->
 
         <!-- //**CHALLENGES OF MFE  **/// -->
         <h3>
@@ -69,10 +100,10 @@
         <p>
             Although micro frontends solve many issues of scalability and maintainability, they introduce new challenges:
         </p>
-        <ol>
+        <!-- <ol>
             <li>
                <span> Performance Overhead:</span> Multiple micro frontends can lead to performance degradation due to increased network requests, 
-               larger bundle sizes, and potential duplication of code.
+              <b> larger bundle sizes</b>, and potential duplication of code.
             </li>
             <li>
                <span>
@@ -100,8 +131,27 @@
                  the community and ecosystem around them are not as mature as those for more established architectures. 
                  This can lead to a lack of best practices, tools, and resources, making it harder to find solutions to common problems.
             </li>
+        </ol> -->
+        <ol>
+            <li>
+                <span>Performance Issues:</span> More network requests, <b>larger bundle sizes</b>, and possible code duplication.
+            </li>
+            <li>
+                <span>Inconsistent UI:</span> Hard to maintain a uniform design across different micro frontends.
+            </li>
+            <li>
+                <span>Team Coordination:</span> Changes affecting multiple parts require strong collaboration.
+            </li>
+            <li>
+                <span>Complex Deployment:</span> Managing separate deployments can be challenging.
+            </li>
+            <li>
+                <span>Limited Community Support:</span> Fewer resources and best practices compared to traditional architectures.
+            </li>
         </ol>
-        <p-image src="assets/images/pros&cons.png" alt="mfe-example" width="100%" [preview]="true" />
+       <div class="navigation">
+        <p-button routerLink="/mf-content" label="Module Federation" severity="secondary" icon="pi pi-arrow-right" iconPos="right"  />
+       </div>
 
         <h6>Created By Hassan Kurdi</h6>
         

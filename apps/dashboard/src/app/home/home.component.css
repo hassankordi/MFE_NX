@@ -4,7 +4,7 @@
     background: linear-gradient(to left, #0c2a27, #13bbbb);
     padding: 50px;
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 500px 850px;
     grid-template-rows: 1f 1fr;
     justify-content: center;
     gap: 30px;

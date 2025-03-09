@@ -32,6 +32,9 @@
       "@v-17-2/prime-forms": [
         "libs/shared-prime/prime-forms/prime-forms/src/index.ts"
       ],
+      "@v-17-2/radar-chart": [
+        "libs/shared-prime/radar-chart/radar-chart/src/index.ts"
+      ],
       "@v-17-2/table-prime": ["libs/shared-prime/table-prime/src/index.ts"],
       "materialSample/Module": [
         "apps/materialSample/src/app/remote-entry/entry.module.ts"

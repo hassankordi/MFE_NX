@@ -51,6 +51,21 @@ border-radius: 2px;
 margin-left: 6px;
 margin-top: 10px;
 }
+.menu-check-list{
+    list-style: none;
+    li{
+        position: relative;
+        &::before{
+            content: "✔";
+            position: absolute;
+            left: -28px;
+        }
+    }
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+}
 /* .dash-p{
     position: relative;
 }

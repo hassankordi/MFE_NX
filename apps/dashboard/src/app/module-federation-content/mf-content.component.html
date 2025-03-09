@@ -3,23 +3,68 @@
         <div class="content col-lg-6 col-md-8 col-sm-10 col-12">
         <h3>Module Federation Introduction!</h3>
            <p>
-            Module Federation is an advanced feature in Webpack that provides a way for a JavaScript application 
-            to dynamically load code from another application. This feature allows for efficient code sharing and 
-            dependency management.
+            Imagine you’re in a <b>food court</b> with multiple restaurants. Instead of each restaurant making everything from scratch, 
+            they <b>share ingredients</b> like sauces, spices, and bread. If a restaurant runs out of an ingredient, it can <b>borrow it 
+                instantly</b> from another without making customers wait.
+           </p>
+           <p>
+           <b>Module Federation, an advanced feature in Webpack 5</b>, works the same way! Instead of bundling everything in one large application, 
+           different apps can <b>share and load code dynamically at runtime</b>—just like restaurants sharing ingredients—making 
+           the system more efficient and reducing duplication.
            </p>
            <p>___ Module Federation works hand in hand with Micro Frontends</p>
-        <h3>
+        <!-- <h3>
             What is Module Federation?
         </h3>
         <p>
             Module Federation allows JavaScript applications to share code and dependencies at runtime. 
             This means that applications can consume modules from other applications without the need for duplication, 
             leading to more efficient and maintainable codebases
-        </p>
-       
-    
-        <p-image src="assets/images/module-federation-pros-cons.png" alt="mf-example" width="100%" [preview]="true" />
+        </p> -->
 
+        <h4>
+            ✔ Pros
+        </h4>
+        <ul>
+            <li>
+                <span>Independent Deployment:</span> Each micro frontend can be deployed separately.
+            </li>
+            <li>
+                <span> Better Performance:</span> Only loads necessary modules, reducing bundle size.
+            </li>
+            <li>
+                <span>Technology Flexibility:</span> Teams can mix Angular, React, Vue, etc.
+            </li>
+            <li>
+                <span>Faster Updates:</span>  Deploy parts of the app without affecting the whole system.
+            </li>
+            <li>
+                <span>Lazy Loading at Runtime:</span> Load components on demand, improving efficiency.
+            </li>
+        </ul>
+        <h4>
+            ❌ Cons
+        </h4>
+        <ul>
+            <li>
+                <span>Increased Complexity:</span> Managing multiple deployments and dependencies is harder.
+            </li>
+            <li>
+                <span>Version Mismatches:</span> Different micro frontends may have conflicting dependencies.
+            </li>
+            <li>
+                <span>Code Duplication Risk:</span> If not managed properly, shared code may be repeated.
+            </li>
+            <li>
+                <span>Higher DevOps Effort:</span> Multiple pipelines and deployments require extra maintenance.
+            </li>
+        </ul>
+        <div class="navigation">
+            <p-button routerLink="/mfe-content" label="Micro Frontends" severity="secondary" icon="pi pi-arrow-left" iconPos="left"  />
+            <p-button routerLink="/nx-monorepo" label="NX Monorepo" severity="secondary" icon="pi pi-arrow-right" iconPos="right"  />
+           </div>
+        
+        <!-- <p-image src="assets/images/module-federation-pros-cons.png" alt="mf-example" width="100%" [preview]="true" /> -->
         <h6>Created By Hassan Kurdi</h6>
         
         </div>
