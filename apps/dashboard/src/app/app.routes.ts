@@ -31,6 +31,10 @@ export const appRoutes: Route[] = [
     canActivate:[AuthGuard]
   },
   {
+    path: 'compare',
+    loadComponent: () => import('./compare/compare.component').then(x => x.CompareComponent)
+  },
+  {
     path: 'Angular_Material',
     loadChildren: () =>
       import('materialSample/Module').then((m) => m!.RemoteEntryModule),

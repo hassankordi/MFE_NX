@@ -5,9 +5,7 @@
     font-family:  "Roboto Mono", serif;
     /* font-weight: 100; */
     padding: 50px;
-   
 }
-
 .grid {
     display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -48,7 +46,6 @@ h3{
         background-color: hsl(179, 73%, 15%);
         &:not(:hover){
             background-color: transparent;
-
         }
         color: #fff;
         font-size: 22px;
@@ -61,9 +58,6 @@ h3{
         }
     }
 }
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -74,18 +68,37 @@ body {
     width: 80%;
     margin: auto;
     padding: 20px;
+   
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
 .section {
     background: white;
-    margin: 20px 0;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    h2,p{
+        padding: 0 10px;
+        text-align: start;
+    }
 }
 .section h2 {
-    text-align: center;
+   margin-bottom: 10px;
+   font-size: 24px;
 }
+.section p {
+   font-weight: 600;
+ }
 .diagram {
-    text-align: center;
-    margin: 20px 0;
+    p-image{
+        margin-bottom: 10px;
+    }
+}
+::ng-deep p-image img
+ {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

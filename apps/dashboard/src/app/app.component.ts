@@ -82,5 +82,12 @@ export class AppComponent {
               icon: 'pi pi-key',
           }
       ]
-    }];
+    },
+    {
+      key: '012',
+      label: 'Monorepo vs Monolithic',
+      data: {route:"/compare"},
+      icon: 'pi pi-exclamation-circle',
+      children: []
+    },];
 }

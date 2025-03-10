@@ -35,35 +35,36 @@
                     A Monorepo is a single repository that contains multiple applications and libraries. 
                     Nx is a powerful tool for managing Monorepos in Angular, React, Node.js, and more.
                    </span>
-                    <a routerLink="/nx-monorepo" class="read-more">Read more</a>
+                   
                 </div>
             </div>
         </div> -->
-        <div class="container">
+        <div class="container cards-container">
         
             <div class="section">
-                <h2>Micro Frontends</h2>
+                <div class="diagram">
+                    <p-image src="../../assets/homeDiagrams/mfe.jpg" alt="mf-example" width="100%" [preview]="true" />
+                </div>
+                <h2>  <a routerLink="/mfe-content" class="read-more">Micro Frontends</a></h2>
                 <p>Micro Frontends is an architectural style where frontend applications are broken down into smaller, independent modules.</p>
-                <div class="diagram">
-                    <p-image src="../../assets/homeDiagrams/mfe.jpg" alt="mf-example" width="20%" [preview]="true" />
-                </div>
             </div>
     
             <div class="section">
-                <h2>Module Federation</h2>
+                <div class="diagram">
+                    <p-image src="../../assets/homeDiagrams/module-federation.jpg" alt="mf-example" width="100%" [preview]="true" />
+                </div>
+                <h2> <a routerLink="/mf-content" class="read-more">Module Federation</a></h2>
                 <p>Module Federation allows different JavaScript applications to share code dynamically at runtime.</p>
-                <div class="diagram">
-                    <p-image src="../../assets/homeDiagrams/module-federation.jpg" alt="mf-example" width="20%" [preview]="true" />
-                    <!-- <img src="module-federation-diagram.png" alt="Module Federation Diagram" width="80%"> -->
-                </div>
+               
             </div>
     
             <div class="section">
-                <h2>Monorepo Integration (NX)</h2>
-                <p>NX helps manage Monorepos efficiently by providing tools for modularization, dependency tracking, and automation.</p>
                 <div class="diagram">
-                    <p-image src="../../assets/homeDiagrams/nx.jpg" alt="mf-example" width="20%" [preview]="true" />
+                    <p-image src="../../assets/homeDiagrams/nx.jpg" alt="mf-example" width="100%" [preview]="true" />
                 </div>
+                <h2> <a routerLink="/nx-monorepo" class="read-more">Monorepo Integration (NX)</a></h2>
+                <p>NX helps manage Monorepos efficiently by providing tools for modularization, dependency tracking, and automation.</p>
+               
             </div>
             
         </div>
